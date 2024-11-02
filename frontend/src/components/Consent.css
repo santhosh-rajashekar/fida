@@ -1,0 +1,79 @@
+/* src/components/Consent.css */
+.consent-container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .consent-container h2 {
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .consent-container .description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .consent-container p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .consent-table {
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table and add margin */
+    padding: 10px; /* Added padding for spacing */
+    background-color: #fff; /* Background color for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .consent-table th, .consent-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: left;
+  }
+  
+  .consent-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .consent-table td ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #444;
+  }
+  
+  .consent-table td ul li {
+    margin-bottom: 5px;
+  }
+  
+  .revoke-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .revoke-button:hover {
+    background-color: #cc0000;
+  }

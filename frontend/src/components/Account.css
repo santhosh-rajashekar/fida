@@ -1,0 +1,82 @@
+/* Container for the entire account page */
+.account-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header for account management */
+.account-header {
+  display: flex;
+  align-items: center;
+  background-color: #555; /* Medium gray background color */
+  color: #f2f2f2; /* Light text color */
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.account-header h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* Main section styling */
+.account-main {
+  margin-top: 20px;
+}
+
+.account-main h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.account-main p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Table styling */
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.account-table th,
+.account-table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.account-table th {
+  background-color: #e0e0e0; /* Light gray background color for table headers */
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ccc; /* Light gray border color */
+}
+
+.account-table td {
+  border-top: 1px solid #ccc; /* Light gray border color */
+  color: #444;
+}
+
+/* Center-aligned, italicized text for empty data rows */
+.account-table tbody tr td {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Hover effect for rows */
+.account-table tbody tr:hover {
+  background-color: #f0f0f0; /* Light gray background color on hover */
+}

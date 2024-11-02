@@ -1,0 +1,119 @@
+/* Container for the entire profile page */
+.profile-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header for account management */
+.profile-header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* Main section styling */
+.profile-main {
+  margin-top: 20px;
+}
+
+.profile-main h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-main p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Content box styling */
+.profile-content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Section header styling with an edit button */
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-section-header h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #444;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.edit-button:hover {
+  color: #0056b3;
+}
+
+/* Profile information rows */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.profile-info-row span {
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-info-value {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Back link styling */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  color: #0056b3;
+}
