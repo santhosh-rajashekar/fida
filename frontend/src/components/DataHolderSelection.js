@@ -3,23 +3,29 @@ import React, { useState } from 'react';
 import './DataHolderSelection.css';
 
 const dataHolders = {
-  banks: [
+  'savings-investment': [
     { id: 'deutsche-bank', name: 'Deutsche Bank' },
     { id: 'commerzbank', name: 'Commerzbank' },
   ],
-  insurance: [
+  'insurance-management': [
     { id: 'allianz', name: 'Allianz' },
     { id: 'ergo', name: 'ERGO' },
   ],
-  investment: [
+  'pension-planning': [
+    { id: 'allianz', name: 'Allianz' },
+    { id: 'munich-re', name: 'Munich Re' },
+  ],
+  'portfolio-tracking': [
     { id: 'dws-group', name: 'DWS Group' },
     { id: 'bitpanda', name: 'Bitpanda' },
   ],
-  others: [
-    { id: 'schufa', name: 'Schufa' },
-    { id: 'munich-re', name: 'Munich Re' },
-    { id: 'kpmg', name: 'KPMG' },
-    { id: 'check24', name: 'Check24' },
+  'crypto-management': [
+    { id: 'bitpanda', name: 'Bitpanda' },
+    { id: 'dws-group', name: 'DWS Group' },
+  ],
+  'travel-insurance': [
+    { id: 'allianz', name: 'Allianz' },
+    { id: 'ergo', name: 'ERGO' },
   ],
 };
 
@@ -47,7 +53,7 @@ const DataHolderSelection = () => {
       </div>
       {Object.keys(dataHolders).map((category) => (
         <div key={category}>
-          <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+          <h3>{category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}</h3>
           <div className="data-holders-grid">
             {dataHolders[category].map((dataHolder) => (
               <div

@@ -48,84 +48,60 @@
   transform: scale(1.05);
 }
 
-/* Unique colors for each service type */
-.credit-score { background-color: #d1e7fd; } /* Soft blue */
-.savings-investment { background-color: #ffd1d1; } /* Soft red */
-.expense-budgeting { background-color: #ffe5d1; } /* Soft orange */
-.insurance-management { background-color: #d1f7e7; } /* Soft green */
-.pension-planning { background-color: #d1e7f7; } /* Soft blue-gray */
-.tax-preparation { background-color: #e7d1f7; } /* Soft purple */
-.portfolio-tracking { background-color: #ffe5d1; } /* Soft peach */
-.crypto-management { background-color: #f7d1f7; } /* Soft pink */
-.financial-comparison { background-color: #d1f7f7; } /* Soft teal */
-.travel-insurance { background-color: #fff5d1; } /* Soft yellow */
+/* Unique colors for each service and data holder */
+.savings-investment { background-color: #d1e7fd; } /* Soft blue */
+.insurance-management { background-color: #ffd1d1; } /* Soft red */
+.pension-planning { background-color: #ffe5d1; } /* Soft orange */
+.portfolio-tracking { background-color: #d1f7e7; } /* Soft green */
+.crypto-management { background-color: #d1e7f7; } /* Soft blue-gray */
+.travel-insurance { background-color: #e7d1f7; } /* Soft purple */
+.deutsche-bank { background-color: #ffd1d1; } /* Soft red */
+.commerzbank { background-color: #ffe5d1; } /* Soft orange */
+.allianz { background-color: #d1f7e7; } /* Soft green */
+.munich-re { background-color: #d1e7f7; } /* Soft blue-gray */
+.dws-group { background-color: #ffe5d1; } /* Soft peach */
+.bitpanda { background-color: #f7d1f7; } /* Soft pink */
+.ergo { background-color: #fff5d1; } /* Soft yellow */
 
+/* Selected card styling */
 .service-card.selected, .data-holder-card.selected {
   border: 2px solid #333;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly bigger shadow for selected */
 }
 
-.submit-button {
-  display: inline-block;
-  margin-top: 20px;
+/* Button styling */
+.button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  margin: 10px 5px;
   border: none;
   border-radius: 6px;
   font-weight: normal;
   font-size: 1rem; /* Increased font size */
   cursor: pointer;
+  color: #fff;
+}
+
+.submit-button {
+  background-color: #007bff;
 }
 
 .submit-button:hover {
   background-color: #0056b3;
 }
 
-/* Consent modal styling */
-.consent-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.consent-modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.proceed-button, .cancel-button {
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.proceed-button {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.proceed-button:hover {
-  background-color: #0056b3;
+.consent-button {
+  background-color: #28a745;
 }
 
 .cancel-button {
-  background-color: #ccc;
-  color: #333;
+  background-color: #dc3545;
 }
 
-.cancel-button:hover {
-  background-color: #999;
+.consent-section {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added bottom margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
