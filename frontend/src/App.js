@@ -6,7 +6,7 @@ import Profile from './components/Profile';
 import ServiceSelection from './components/ServiceSelection';
 import ConsentManagement from './components/ConsentManagement';
 import DataHolderSelection from './components/DataHolderSelection';
-import PermissionsManagement from './components/PermissionsManagement';
+import PermissionsDashboard from './components/PermissionsDashboard';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import ForgotPassword from './components/ForgotPassword';
@@ -47,7 +47,7 @@ function App() {
               <Route path="/services" element={<ServiceSelection />} />
               <Route path="/consent" element={<ConsentManagement />} />
               <Route path="/dataholders" element={<DataHolderSelection />} />
-              <Route path="/permissions" element={<PermissionsManagement />} />
+              <Route path="/permissions" element={<PermissionsDashboard />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="*" element={<Navigate to="/account" />} />
             </>
